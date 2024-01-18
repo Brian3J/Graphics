@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Size Grid with Grey Background, Borders, and Column Gap</title>
+    <style>
+        /* Basic styling for the grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 200px); /* Fixed width for each column */
+            grid-template-rows: repeat(2, 200px); /* Fixed height for each row */
+            gap: 20px; /* Add gap between grid items and columns */
+            background-color: #f0f0f0; /* Grey background color */
+            padding: 20px; /* Add padding for better visibility */
+            border: 2px solid #ccc; /* Add a border to the grid container */
+        }
+
+        /* Styling for the white square */
+        .grid-item {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+            border: 1px solid #ddd; /* Add a border to each grid item */
+            border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+        }
+
+        /* Styling for the image inside the square */
+        .grid-item img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%; /* Optional: Add border-radius for a circular image */
+        }
+
+        /* Styling for the description inside the square */
+        .grid-item p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <!-- First Row -->
+        <div class="grid-item">
+            <img src="image1.jpg" alt="Image 1">
+            <p>Description 1</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="image2.jpg" alt="Image 2">
+            <p>Description 2</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="image3.jpg" alt="Image 3">
+            <p>Description 3</p>
+        </div>
+
+        <!-- Second Row -->
+        <div class="grid-item">
+            <img src="image4.jpg" alt="Image 4">
+            <p>Description 4</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="image5.jpg" alt="Image 5">
+            <p>Description 5</p>
+        </div>
+
+        <div class="grid-item">
+            <img src="image6.jpg" alt="Image 6">
+            <p>Description 6</p>
+        </div>
+    </div>
+
+</body>
+</html>
