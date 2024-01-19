@@ -1,4 +1,6 @@
-<?php
+<form method="post" action="https://forms.un-static.com/forms/2297c3a0fbce7c214664430657b4c5f3f868b267">
+  
+  <?php
   /**
   * Requires the "PHP Email Form" library
   * The "PHP Email Form" library is available only in the pro version of the template
@@ -9,11 +11,12 @@
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'bbhernandez@gmail.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
+  if( file_exists($php_email_form = 'https://forms.un-static.com/forms/2297c3a0fbce7c214664430657b4c5f3f868b267' )) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');
   }
+  
 
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
